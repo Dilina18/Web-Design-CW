@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+Please Note: 
+- The section tag is used to define a section in the page and the divs "ContextDiv1"~"ContextDiv3" are used to format the main content of the page to the left side.
+- since we're using a single font (Open Sans) for 99% of the page (Used Montserrat for the main logo), I opted to set it globally using * .
+*/
+
+
+/*landing Page*/
+
+.heading {
+    margin-top: 40vh;
+    margin-bottom: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #14213D;
+}
+
+.heading_text {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: 1;
+}
+
+.heading i,
+h2 {
+    display: inline;
+    float: none;
+}
+
+.heading i {
+    margin-right: 30px;
+    font-size: 60px;
+}
+
+
+/*General Formatting for all the Sections in the page*/
+
+.Phead {
+    font-size: 30px;
+    color: #14213d;
+    position: relative;
+    top: -20%;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: solid 2px #fca31f;
+}
+
+.about_container {
+    margin-top: 30vh;
+    margin-left: 100px;
+    align-content: center;
+    align-items: stretch;
+}
+
+.ContextTxt {
+    font-size: 15px;
+    color: #14213d;
+    margin-top: 100px;
+    margin-left: 50px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.ContextHL {
+    text-decoration: none;
+}
+
+
+/*Button Formatting*/
+
+.ContextHLbtn {
+    width: 200px;
+    height: 40px;
+    margin: 1em 0.5em 0.5em 6em;
+    position: relative;
+    background-color: #14213d;
+    overflow: hidden;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.ContextHLbtn:hover {
+    box-shadow: 0 5px 5px 0 #fca31f;
+}
+
+.ContextHLbtn h3 {
+    color: #fff;
+    padding-top: 1vh;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ContextHLbtn:hover h3 {
+    color: #fca31f;
+}
+
+
+/*Store*/
+
+.contextDiv1 {
+    position: absolute;
+    z-index: auto;
+    width: 50%;
+    height: 100%;
+    /*top: 100%;*/
+    left: 0%;
+    align-items: center;
+}
+
+.pageb {
+    background-image: url(images/store-fade.jpg);
+    width: 50%;
+    height: 100%;
+    float: right;
+    top: 100vh;
+    padding-top: 0;
+}
+
+
+/*Trivia Section*/
+
+.pagec {
+    position: relative;
+    background-image: url(images/quiz-fade.jpg);
+    width: 50%;
+    height: 100%;
+    float: right;
+    left: 50%;
+    top: 100vh;
+    padding-top: 0;
+}
+
+.contextDiv2 {
+    position: absolute;
+    z-index: auto;
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: -100%;
+    align-items: center;
+}
+
+
+/*Gallery Section*/
+
+.paged {
+    position: relative;
+    background-image: url(images/gallery-fade.jpg);
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 50%;
+    top: 100vh;
+    padding-top: 0;
+}
+
+.contextDiv3 {
+    position: absolute;
+    z-index: auto;
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: -100%;
+    align-items: center;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sitemap</title>
+	
+    <link rel="stylesheet" href="theme.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	
+	<style>
+		#svgJS g:hover polyline,
+		#svgJS g:hover line {
+			fill: none;
+		}
+
+		#svgJS g:hover g text,
+		#svgJS g:hover text {
+			font-weight: bold;
+		}
+
+		#svgJS g:hover polygon,
+		#svgJS g:hover rect,
+		#svgJS g:focus polygon,
+		#svgJS g:focus rect {
+			fill: #fca311
+		}
+		
+		body {
+		background-image: url('images/bg.jpg');
+		}
+		h1 {
+			padding-top: 20px;
+			padding-left: 840px;
+			color: #14213d;
+		}
+</style>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-movie-play'></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="Main.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="Quiz.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+
+            <li>
+                <a href="Gallery.html">
+                    <i class='bx bx-images'></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="Sitemap.html">
+                    <i class='bx bx-sitemap'></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="StudentDetails.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <i class='bx bx-message-square-dots'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="EditorKumuditha.html">
+            <div class="profile_content">
+                <div class="tooltipPgEdit">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <div class="group_info">
+                                <i class='bx bx-edit'></i>
+                                <div class="text_1">Page Editor</div>
+                                <div class="text_2">Kumuditha Dodanwela</div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="tooltiptext">Page Editor</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="home_content">
+	
+		<!-- Start of sitemap -->
+		
+		<h1>The Sitemap</h1>
+		<svg id="svgJS" height="830" width="1900">
+	
+			<!-- presentation to main -->
+			<line x1="925" y1="180" x2="925" y2="230" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- main to mid vertical -->
+			<line x1="925" y1="300" x2="925" y2="280" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- main to mid horizontal -->
+			<line x1="630" y1="300" x2="1220" y2="300" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- mid to query -->
+			<line x1="630" y1="550" x2="630" y2="299" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- mid to store -->
+			<line x1="825" y1="550" x2="825" y2="299" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- mid to sitemap -->
+			<line x1="1025" y1="550" x2="1025" y2="299" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- mid to quiz -->
+			<line x1="1220" y1="550" x2="1220" y2="299" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- mid to details -->
+			<line x1="1125" y1="680" x2="1125" y2="299" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- mid to gallery -->
+			<line x1="725" y1="680" x2="725" y2="299" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- main to editor -->
+			<line x1="930" y1="255" x2="1220" y2="255" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			<!-- presentation to editor -->
+			<line x1="930" y1="155" x2="1220" y2="155" style="stroke:rgb(0,0,0);stroke-width:3"/>
+			
+			<g id="presentation">
+				<rect x="850" y="130" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="925" y="160" font-family="Arial" text-anchor="middle">Presentation</text>
+			</g>
+			
+
+			<g id="mainpage" >
+				<rect x="850" y="230" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+			<text fill="white" font-size="14" x="925" y="260" font-family="Arial" text-anchor="middle">Main Page</text>
+			</g>
+			
+			<g id="student1">
+				<rect x="1150" y="130" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1225" y="150" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="1225" y="170" font-family="Arial" text-anchor="middle">(Student 1)</text>
+			</g>
+			
+			<g id="student2">
+				<rect x="1150" y="230" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1225" y="250" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="1225" y="270" font-family="Arial" text-anchor="middle">(Student 2)</text>
+			</g>
+
+			<g id="store" >
+				<rect x="750" y="330" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="825" y="360" font-family="Arial" text-anchor="middle">Store</text>
+			</g>
+			
+			<g id="sitemap" >
+				<rect x="950" y="330" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1025" y="360" font-family="Arial" text-anchor="middle">Sitemap</text>
+			</g>
+			
+			<g id="quiz" >
+				<rect x="1150" y="330" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1225" y="360" font-family="Arial" text-anchor="middle">Quiz</text>
+			</g>
+			
+			<g id="query" >
+				<rect x="550" y="330" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="625" y="360" font-family="Arial" text-anchor="middle">Query Form</text>
+			</g>
+			
+			<g id="gallery" >
+				<rect x="650" y="430" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="725" y="460" font-family="Arial" text-anchor="middle">Gallery</text>
+			</g>
+			
+			<g id="sdetails" >
+				<rect x="1050" y="430" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1125" y="460" font-family="Arial" text-anchor="middle">Student Details</text>
+			</g>
+			
+			<g id="student2v1" >
+				<rect x="550" y="530" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="625" y="550" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="625" y="570" font-family="Arial" text-anchor="middle">(Student 2)</text>
+			</g>
+			
+			<g id="student1v1" >
+				<rect x="750" y="530" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="825" y="550" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="825" y="570" font-family="Arial" text-anchor="middle">(Student 1)</text>
+			</g>
+			
+			<g id="student4" >
+				<rect x="950" y="530" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1025" y="550" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="1025" y="570" font-family="Arial" text-anchor="middle">(Student 4)</text>
+			</g>
+			
+			<g id="student3" >
+				<rect x="1150" y="530" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1225" y="550" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="1225" y="570" font-family="Arial" text-anchor="middle">(Student 3)</text>
+			</g>
+			
+			<g id="student3v1" >
+				<rect x="1050" y="630" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="1125" y="650" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="1125" y="670" font-family="Arial" text-anchor="middle">(Student 3)</text>
+			</g>
+			
+			<g id="student4v1" >
+				<rect x="650" y="630" rx="10" height="50" width="150" fill="#14213d" stroke-width="2" />
+				<text fill="white" font-size="14" x="725" y="650" font-family="Arial" text-anchor="middle">Page editor</text>
+				<text fill="white" font-size="14" x="725" y="670" font-family="Arial" text-anchor="middle">(Student 4)</text>
+			</g>
+			
+
+		</svg>
+    </div>
+	
+	<!-- End of sitemap -->
+
+    <script>
+	
+			document.getElementById("presentation").
+			addEventListener("click", function() {
+				document.location.href="index.html";
+		});
+		document.getElementById("mainpage").
+			addEventListener("click", function() {
+				document.location.href="Main.html";
+		});
+		document.getElementById("student1").
+			addEventListener("click", function() {
+				document.location.href="EditorRandika.html";
+		});
+		document.getElementById("student2").
+			addEventListener("click", function() {
+				document.location.href="EditorSachindu.html";
+		});
+		document.getElementById("store").
+			addEventListener("click", function() {
+				document.location.href="Products.html";
+		});
+		document.getElementById("sitemap").
+			addEventListener("click", function() {
+				document.location.href="Sitemap.html";
+		});
+		document.getElementById("quiz").
+			addEventListener("click", function() {
+				document.location.href="Quiz.html";
+		});
+		document.getElementById("query").
+			addEventListener("click", function() {
+				document.location.href="Contact.html";
+		});
+		document.getElementById("gallery").
+			addEventListener("click", function() {
+				document.location.href="Gallery.html";
+		});
+		document.getElementById("sdetails").
+			addEventListener("click", function() {
+				document.location.href="StudentDetails.html";
+		});
+		document.getElementById("student2v1").
+			addEventListener("click", function() {
+				document.location.href="EditorSachindu.html";
+		});
+		document.getElementById("student1v1").
+			addEventListener("click", function() {
+				document.location.href="EditorRandika.html";
+		});
+		document.getElementById("student4").
+			addEventListener("click", function() {
+				document.location.href="EditorKumuditha.html";
+		});
+		document.getElementById("student3").
+			addEventListener("click", function() {
+				document.location.href="EditorNiamat.html";
+		});
+		document.getElementById("student3v1").
+			addEventListener("click", function() {
+				document.location.href="EditorNiamat.html";
+		});
+		document.getElementById("student4v1").
+			addEventListener("click", function() {
+				document.location.href="EditorKumuditha.html";
+		});
+		
+	
+	<!-- Start of navbar -->
+	
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active")
+        }
+		
+	<!-- End of navbar -->
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,61 @@
+body{
+    background-color: #14213D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 600px;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+}
+
+img{
+    height: 336px;
+    width: 256px;
+    margin-top: 30px;
+    box-shadow: 1px 2px lightslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+/* Hover Effects */
+img:hover{
+    box-shadow: 5px 5px 20px black;
+    transition: .3s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 5px 0 #fca31f;
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+.card:hover .details,
+card:hover .details a {
+    transform: none;
+}
+
+/* Buttons CSS */
+
+.buttons {
+    padding: 7px 30px;
+    background-color: #FCA31f;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.buttons:hover{
+    background-color: #14213D;
+    transition: 0.15s;
+    color: #FCA31f;
+    transform: scale(1.05);
+    border: 3px solid #FCA31f;
+}

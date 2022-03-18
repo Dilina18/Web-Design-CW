@@ -1,0 +1,123 @@
+body {
+
+    color: white;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: #222
+}
+
+.masthead-intro {
+
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+	background-color: #FF532F;
+}
+
+.masthead-heading {
+
+    color: #f99e14;
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section,.location-section,.questions-section {
+	
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+	text-align: center;
+}
+
+.introduction-section > p,.location-section > p,.questions-section,.content-footer > p {
+
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+	
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2em 0 1em 0;
+}
+
+section > h1 {
+    margin-top: 2em;
+	color: #FF532F
+}
+
+.content-footer,.masthead-heading,.masthead-intro {
+	
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+	
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+  color: white;
+}
+
+.masthead-heading {
+	
+  margin-top: -0.2em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.introduction > p,.location > p,.content-footer > p {
+
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+h2 {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+	color: #f99e14;
+}
+
+.introduction-section,.location-section,.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #FF532F;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: #F7EDE1;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+}

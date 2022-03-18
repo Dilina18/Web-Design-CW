@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page | LUMIÈRE</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="theme.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-movie-play'></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="Main.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="Quiz.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+
+            <li>
+                <a href="Gallery.html">
+                    <i class='bx bx-images'></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="Sitemap.html">
+                    <i class='bx bx-sitemap'></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="StudentDetails.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <i class='bx bx-message-square-dots'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="EditorSachindu.html">
+            <div class="profile_content">
+                <div class="tooltipPgEdit">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <div class="group_info">
+                                <i class='bx bx-edit'></i>
+                                <div class="text_1">Page Editor</div>
+                                <div class="text_2">Sachindu Jayasinghe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="tooltiptext">Page Editor</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--Main Content-->
+    <div class="home_content">
+        <div class="heading"><i class='bx bxs-movie-play'></i>
+            <h2 class="heading_text">LUMIÈRE</h2>
+        </div>
+
+        <!--Section about the Store-->
+        <section class="pageb">
+            <div class="contextDiv1">
+                <div class="about_container">
+                    <h2 class="Phead">Store</h2>
+                    <p class="ContextTxt">Wanna rep the movie fan life? Check out our Store.</p>
+                    <a class="ContextHL" href="Products.html">
+                        <div class="ContextHLbtn">
+                            <h3>Check it out here >>></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Section about the Trivia-->
+        <section class="pagec">
+            <div class="contextDiv2">
+                <div class="about_container">
+                    <h2 class="Phead">Movie Trivia</h2>
+                    <p class="ContextTxt">Wanna test your movie knowledge? Check out our weekly trivia.</p>
+                    <a class="ContextHL" href="Quiz.html">
+                        <div class="ContextHLbtn">
+                            <h3>Enter Quiz >>></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Section about the Gallery-->
+        <section class="paged">
+            <div class="contextDiv3">
+                <div class="about_container">
+                    <h2 class="Phead">Gallery</h2>
+                    <p class="ContextTxt">Wanna check the movies we offer? Check them out here.</p>
+                    <a class="ContextHL" href="Gallery.html">
+                        <div class="ContextHLbtn">
+                            <h3>View Gallery >>></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

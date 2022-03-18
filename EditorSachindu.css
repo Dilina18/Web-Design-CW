@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.profileCont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border: solid 1px #ccc;
+    padding: 2em;
+    transition: all 0.5s ease;
+}
+
+.profileCont img {
+    margin: 1em;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+}
+
+.profileCont:hover {
+    box-shadow: 0 5px 5px 0 #14213d;
+}
+
+.profileCont:hover img {
+    box-shadow: 0 5px 5px 0 #fca31f;
+}
+
+.profileCont .name {
+    text-align: center;
+}
+
+.profileCont h4 {
+    margin-top: 0.2em;
+    text-align: center;
+}
+
+.profileCont dl {
+    margin: 1em;
+}
+
+.profileCont dd {
+    margin-inline-start: 1em;
+}
+
+.backBtn {
+    width: 200px;
+    height: 40px;
+    margin: 1.5em 0.5em 0.5em 4em;
+    position: relative;
+    background-color: #14213d;
+    overflow: hidden;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.backBtn:hover {
+    box-shadow: 0 5px 5px 0 #fca31f;
+}
+
+.backBtn h3 {
+    color: #fff;
+    padding-top: 1vh;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.backBtn:hover h3 {
+    color: #fca31f;
+}

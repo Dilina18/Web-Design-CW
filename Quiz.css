@@ -1,0 +1,128 @@
+/* Hide All Content Except Main Page */
+.questionContainer,
+.resultContainer {
+    display:none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Design for ALl Boxes */
+.questionContainer, .infoContainer, .resultContainer {
+    background-color: #14213D;
+    width: 40%;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 black, 0 5px 5px 0 black;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.quizHeader {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-weight: 300;
+    color: white;
+    font-size: 60px;
+}
+
+.question, .infoList, .scoreBox{
+    background-color: #628395;
+    color: white;
+    width: 100%;
+    margin: 20px 5px 5px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.questionNumber, .infoTitle{
+  font-size: 25px;
+}
+
+.hr{
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.answer {
+    margin: 15px;
+    padding: 8px 25px 8px 8px;
+    font-size: 20px;
+}
+.corAns{
+    border-radius: 15px;
+    padding: 8px 35%;
+} #q1,#q2{
+    padding: 8px 25%;
+  }
+
+.buttons {
+    padding: 7px 15px;
+    background-color: #FCA31f;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+}
+
+.buttons:hover{
+    background-color: #14213D;
+    transition: 0.15s;
+    color: #FCA31f;
+    transform: scale(1.05);
+    overflow: hidden;
+    border: 3px solid #FCA31f;
+}
+
+#progressBar {
+    width: 100%;
+    height: 25px;
+}
+
+.timer {
+    text-align: right;
+    font-size: 20px;
+}
+
+#timeLeft , #timeText, #timer2, .scoreText{
+    color: white;
+}
+
+#timer2 {
+    padding: 23px 16px 16px;
+    position: fixed;
+    top: 45%;
+    right: 22%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #14213D;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+}
+
+#timer2s{
+    font-size: 35px;
+}
+
+#backTop{
+    background-color: #628395;
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    right: 24%;
+    font-size: 30px;
+    border: 5px solid #14213D;
+
+}
+.infoList {
+    font-size: larger;
+}

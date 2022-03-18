@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" href="./theme.css">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Products.css">
+    
+</head>
+
+<body>
+    <!-- Running images on background -->
+    <img src="./images/superman.jpg" alt="image_background" id="back-img">
+
+    <!-- Starting of Nav Bar -->
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="bx bxs-movie-play"></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="./Main.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="./Products.html">
+                    <i class="bx bx-cart-alt"></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="./Quiz.html">
+                    <i class="bx bx-question-mark"></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+            <li>
+                <a href="./Gallery.html">
+                    <i class="bx bx-images"></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="./Sitemap.html">
+                    <i class="bx bx-sitemap"></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="./StudentDetails.html">
+                    <i class="bx bxs-user-detail"></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="./Contact.html">
+                    <i class="bx bx-message-square-dots"></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="./EditorRandika.html">
+            <div class="profile_content">
+                <div class="tooltipPgEdit">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <div class="group_info">
+                                <i class="bx bx-edit"></i>
+                                <div class="text_1">Page Editor</div>
+                                <div class="text_2">Dilina Randika</div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="tooltiptext">Page Editor</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- end of Nav Bar -->
+
+    <!-- Starting of Buy Products page -->
+    <div class="home_content">
+        <div class="text" id="home-text">LUMIÈRE - STORE<i class="bx bx-cart-alt"></i> </div>
+
+        <!-- Done! btn which will appear with invoice -->
+        <button id="done">DONE!</button>
+
+        <!-- Div box 1 for products items in line 1 -->
+        <div class="slider-box" id="slider-box1">
+
+            <!-- 3 Product item boxes inside that box -->
+            <div class="items" id="item1">
+                <p class="time">2019</p>
+                <p class="code">001</p>
+                <div class="img-box" id="img1"><img src="./images/irishmanb.jpg" alt="img1"></div>
+                <p class="detail">The Irishman
+                    <a href="#" class="price">150$</a>
+                </p>
+                <div class="cart">
+                    <button id="btn-001">Add To Cart</button>
+                </div>
+                <div class="back" id="back1"></div>
+            </div>
+
+            
+            <div class="items" id="item2">
+                <p class="time">2019</p>
+                <p class="code">002</p>
+                <div class="img-box" id="img2"><img src="./images/avengers.jpg" alt="img2"></div>
+                <p class="detail">Avengers: Endgame
+                    <a href="#" class="price">300$</a>
+                </p>
+                <div class="cart">
+                    <button id="btn-002">Add To Cart</button>
+                </div>
+                <div class="back" id="back2"></div>
+            </div>
+
+
+            <div class="items" id="item3">
+                <p class="time">2015</p>
+                <p class="code">003</p>
+                <div class="img-box" id="img3"><img src="./images/martian.jpg" alt="img3"></div>
+                <p class="detail">The Martian
+                    <a href="#" class="price">100$</a>
+                </p>
+                <div class="cart">
+                    <button id="btn-003">Add To Cart</button>
+                </div>
+                <div class="back" id="back3"></div>
+            </div>
+            
+        </div>
+
+        <!-- Div box 2 for products items in line 2 -->
+        <div class="slider-box" id="slider-box2">
+            
+            <!-- 3 Product item boxes inside that box -->
+            <div class="items" id="item4">
+                <p class="time">2020</p>
+                <p class="code">004</p>
+                <div class="img-box" id="img4"><img src="./images/quietPlace.jpg" alt="img4"></div>
+                <p class="detail">A Quiet Place Part II
+                    <a href="#" class="price">200$</a>
+                </p>
+                <div class="cart">
+                    <button id="btn-004">Add To Cart</button>
+                </div>
+                <div class="back" id="back4"></div>
+            </div>
+
+
+            <div class="items" id="item5">
+                <p class="time">2013</p>
+                <p class="code">005</p>
+                <div class="img-box" id="img5"><img src="./images/slave.jpg" alt="img5"></div>
+                <p class="detail">12 Years A Slave
+                    <a href="#" class="price">100$</a>
+                </p>
+                <div class="cart">
+                    <button id="btn-005">Add To Cart</button>
+                </div>
+                <div class="back" id="back5"></div>
+            </div>
+
+            <div class="items" id="item6">
+                <p class="time">2018</p>
+                <p class="code">006</p>
+                <div class="img-box" id="img6"><img src="./images/english.jpg" alt="img6"></div>
+                <p class="detail">Johnny English
+                    <a href="#" class="price">250$</a>
+                </p>
+                <div class="cart">
+                    <button id="btn-006">Add To Cart</button>
+                </div>
+                <div class="back" id="back6"></div>
+            </div>
+
+        </div>
+
+        <!-- Starting of Form -->
+        <form class="form" id="my-form">
+            <fieldset class="fieldset" id="my-fieldset">
+                <legend>CART <sup><input type="text" value="0" size="1" id="qtycart" ></sup></legend>
+
+                <!-- 6 div boxes inside form which are appear after clickcing Add to Cart btn -->
+                <div class="cart-form" id="div1">
+                    <ul>
+                        <li class="div-code">001</li>
+                        <li class="div-code">150$</li>
+                        <li><button class="plus" id="plus1">+</button></li>
+                        <li><input type="text" size="3" value="0" id="qty1" class="qty"></li>
+                        <li><button class="minus" id="minus1">-</button></li>
+                        <li><button class="remove" id="remove1">Remove</button></li>
+                    </ul>
+                </div>
+                <div class="cart-form" id="div2">
+                    <ul>
+                        <li class="div-code">002</li>
+                        <li class="div-code">300$</li>
+                        <li><button class="plus" id="plus2">+</button></li>
+                        <li><input type="text" size="3" value="0" id="qty2" class="qty"></li>
+                        <li><button class="minus" id="minus2">-</button></li>
+                        <li><button class="remove" id="remove2">Remove</button></li>
+                    </ul>
+                </div>
+                <div class="cart-form" id="div3">
+                    <ul>
+                        <li class="div-code">003</li>
+                        <li class="div-code">100$</li>
+                        <li><button class="plus" id="plus3">+</button></li>
+                        <li><input type="text" size="3" value="0" id="qty3" class="qty"></li>
+                        <li><button class="minus" id="minus3">-</button></li>
+                        <li><button class="remove" id="remove3">Remove</button></li>
+                    </ul>
+                </div>
+                <div class="cart-form" id="div4">
+                    <ul>
+                        <li class="div-code">004</li>
+                        <li class="div-code">200$</li>
+                        <li><button class="plus" id="plus4">+</button></li>
+                        <li><input type="text" size="3" value="0" id="qty4" class="qty"></li>
+                        <li><button class="minus" id="minus4">-</button></li>
+                        <li><button class="remove" id="remove4">Remove</button></li>
+                    </ul>
+                </div>
+                <div class="cart-form" id="div5">
+                    <ul>
+                        <li class="div-code">005</li>
+                        <li class="div-code">100$</li>
+                        <li><button class="plus" id="plus5">+</button></li>
+                        <li><input type="text" size="3" value="0" id="qty5" class="qty"></li>
+                        <li><button class="minus" id="minus5">-</button></li>
+                        <li><button class="remove" id="remove5">Remove</button></li>
+                    </ul>
+                </div>
+                <div class="cart-form" id="div6">
+                    <ul>
+                        <li class="div-code">006</li>
+                        <li class="div-code">250$</li>
+                        <li><button class="plus" id="plus6">+</button></li>
+                        <li><input type="text" size="3" value="0" id="qty6" class="qty"></li>
+                        <li><button class="minus" id="minus6">-</button></li>
+                        <li><button class="remove" id="remove6">Remove</button></li>
+                    </ul>
+                </div>
+
+                <!-- Showing total inside cart items -->
+                <div class="total" id="total">
+                    <label for="total" >Total - </label>
+                    <input type="text" name="total" value="0" id="qtytotal">
+                </div>
+                
+                <!-- Personal Details Section inside form -->
+                <h3 class="personal-details">PERSONAL DETAILS</h3>
+
+                <div class="form-details">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname">
+                    <label for="email">E-Mail:</label>
+                    <input type="text" name="email" id="email">
+                    <span class="indicator-mail" id="light1"></span>
+                    <label for="mobile">Mobile:</label>
+                    <input type="text" name="mobile" id="mobile">
+                    <label for="card">Card Number:</label>
+                    <input type="text" name="card" id="card">
+                    <span class="indicator-card" id="light2"></span>
+                    <button id="reset">Reset</button>
+                    <button id="place-order">PLACE ORDER</button>
+                </div>
+
+                <!-- Rotating logo inside form -->
+                <div id="form-logo"><i class="bx bxs-movie-play"></i></div>
+                
+            </fieldset>
+        </form>
+        
+        <!--Define Invoice-->
+        
+        <div id="invoice">
+            <label for="bill" id="bill-label">DETAILED - BILL</label>
+            <textarea name="bill" id="bill" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    
+
+
+    <script src="./Products.js"></script>
+
+</body>
+
+</html>

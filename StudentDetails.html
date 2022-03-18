@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="StudentDetails.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-movie-play'></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="Main.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="Quiz.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+
+            <li>
+                <a href="Gallery.html">
+                    <i class='bx bx-images'></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="Sitemap.html">
+                    <i class='bx bx-sitemap'></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="StudentDetails.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <i class='bx bx-message-square-dots'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="EditorNiamat.html">
+                <div class="profile_content">
+                    <div class="tooltipPgEdit">
+                        <div class="profile">
+                            <div class="profile_details">
+                                <div class="group_info">
+                                    <i class='bx bx-edit'></i>
+                                    <div class="text_1">Page Editor</div>
+                                    <div class="text_2">Niamat Marjan</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="tooltiptext">Page Editor</span>
+                    </div>
+                </div>
+            </a>
+    </div>
+
+    <div class="home_content"> <!--class for the imported css file-->
+        <div class="heading">
+            <h1>MEET OUR TEAM!</h1>
+        </div>
+        <!-- Container For All Cards -->
+        <div class="container">
+            <!-- All Student Cards -->
+            <div class="card">
+                <img src="images\randika.jpeg" alt="">
+                <div class="details">
+                    <h2>Dilina Edirisinghe</h2>
+                    <h3>Student 01</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images\sachindu.jpg" alt="">
+                <div class="details">
+                    <h2>Sachindu Jayasinghe</h2>
+                    <h3>Student 02</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images\niamat.png" alt="">
+                <div class="details">
+                    <h2>Niamat <br> Marjan</h2>
+                    <h3>Student <br> 03</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\kumuditha.jpg" alt="">
+                <div class="details">
+                    <h2>Kumuditha Dodanwela</h2>
+                    <h3>Student 04</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Bar Script -->
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active")
+        }
+    </script>
+</body>
+
+</html>

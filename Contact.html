@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | LUMIÈRE</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Contact.js"></script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-movie-play'></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="Main.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="Quiz.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+
+            <li>
+                <a href="Gallery.html">
+                    <i class='bx bx-images'></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="Sitemap.html">
+                    <i class='bx bx-sitemap'></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="StudentDetails.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <i class='bx bx-message-square-dots'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="EditorSachindu.html">
+            <div class="profile_content">
+                <div class="tooltipPgEdit">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <div class="group_info">
+                                <i class='bx bx-edit'></i>
+                                <div class="text_1">Page Editor</div>
+                                <div class="text_2">Sachindu Jayasinghe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="tooltiptext">Page Editor</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--Main Content-->
+    <div class="home_content">
+
+        <!--HTML div+form to enter query details-->
+        <div class="wrapper" id="wrapper">
+            <h2>contact us</h2>
+            <div class="errorMessage" id="errorMessage"></div>
+            <form class="myform" id="myform" onsubmit="return validation()">
+                <div class="inputField">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
+                <div class="inputField">
+                    <p>Subject</p>
+                    <select name="subject" id="subject">
+                        <option value="01">Pricing related Query</option>
+                        <option value="02">Shipping related Query</option>
+                        <option value="03">Customer Service Related Query</option>
+                </div>
+                <div class="inputField">
+                    <input type="text" placeholder="Phone" id="phone">
+                </div>
+                <div class="inputField">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="inputField">
+                    <textarea id="message" placeholder="Message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+
+        <!--HTML div to review query details-->
+        <div class="checkResults" id="checkResults">
+            <h2>contact us</h2>
+            <p class="labelp">Name: </p>
+            <h5 id="finalName"> </h5><br>
+
+            <p class="labelp">Subject: </p>
+            <h5 id="finalSubject"> </h5><br>
+
+            <p class="labelp">Email: </p>
+            <h5 id="finalEmail"> </h5><br>
+
+            <p class="labelp">Phone: </p>
+            <h5 id="finalPhone"> </h5><br>
+
+            <p class="labelp">Message: </p>
+            <h5 id="finalMessage"> </h5><br>
+
+            <button id="editBtn" class="checkBtn" onclick="editResults()"> <p>Edit Query</p> </button>
+            <input class="checkBtn" type="submit" onclick="sendResults()">
+        </div>
+    </div>
+
+   <!--JavaScript to extend the Navigation Bar-->
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active")
+        }
+    </script>
+</body>
+
+
+
+</html>

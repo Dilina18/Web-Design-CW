@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Circle Animation */
+.out-circle {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+}
+.out-circle .in-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(20, 33, 61, 1);
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.out-circle .in-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top, transparent, rgba(252, 163, 31, 0.5));
+  background-size: 100px, 100px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.out-circle .in-circle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translatex(-50%);
+  background: rgba(252, 163, 31, 1);
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(252, 163, 31, 0.5), 0 0 20px rgba(252, 163, 31, 0.5),
+    0 0 30px rgba(252, 163, 31, 0.5), 0 0 40px rgba(252, 163, 31, 0.5),
+    0 0 50px rgba(252, 163, 31, 0.5), 0 0 60px rgba(252, 163, 31, 0.5),
+    0 0 70px rgba(252, 163, 31, 0.5), 0 0 80px rgba(252, 163, 31, 0.5),
+    0 0 90px rgba(252, 163, 31, 0.5), 0 0 100px rgba(252, 163, 31, 0.5);
+}
+.out-circle .in-circle span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(20, 33, 61, 1);
+  border-radius: 50%;
+  animation: scale 1s linear;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* design page head details */
+
+#head {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  font-size: 40px;
+  color: rgba(20, 33, 61, 1);
+}
+#head i {
+  position: relative;
+  bottom: 20px;
+  margin-right: 10px;
+  font-size: 80px;
+  animation: logo 3s linear;
+}
+#head .topic {
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+  animation: head 0.5s linear;
+}
+
+@keyframes head {
+  0% {
+    left: -700px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Rotating page logo in middle */
+.b1 {
+  position: absolute;
+  font-size: 60px;
+  color: goldenrod;
+  z-index: 1;
+  animation: group 3s linear infinite, scale 1s linear;
+  -webkit-box-reflect: below 120px linear-gradient(#0001, #0004);
+}
+@keyframes group {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Student details */
+#kumuditha {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  animation: kd 0.5s ease-out;
+}
+@keyframes kd {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  100% {
+    left: 15%;
+    opacity: 1;
+  }
+}
+#sachindu {
+  position: absolute;
+  right: 15%;
+  top: 20%;
+  animation: sj 0.5s ease-out;
+}
+@keyframes sj {
+  0% {
+    right: 0%;
+    opacity: 0;
+  }
+  100% {
+    right: 15%;
+    opacity: 1;
+  }
+}
+#niamat {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  animation: nm 0.5s ease-out;
+}
+@keyframes nm {
+  0% {
+    bottom: 0%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 20%;
+    opacity: 1;
+  }
+}
+#randika {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  animation: dr 0.5s ease-out;
+}
+@keyframes dr {
+  0% {
+    bottom: 0%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 20%;
+    opacity: 1;
+  }
+}
+.student h2 {
+  font-family: cursive;
+}
+.student {
+  color: rgba(20, 33, 61, 1);
+  padding: 20px;
+  border: 2px solid;
+  border-color: rgba(20, 33, 61, 1);
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+/* background img of head */
+img {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  height: 100px;
+  width: 100%;
+}
+
+/* design page editor link in left bottom corner */
+#developer {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(20, 33, 61, 1);
+}

@@ -1,0 +1,69 @@
+body .container {
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #14213d;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 10px 20px #14213D;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.details {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 10px;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.details h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.details h3 {
+    font-size: 15px;
+    text-align: end;
+}
+
+/* Card CSS Hover Effects */
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card:hover .details {
+    transform: none;
+}

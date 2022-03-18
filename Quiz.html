@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="theme.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body id="body">
+    <!-- Nav Bar -->
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-movie-play'></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="Main.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="Quiz.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+
+            <li>
+                <a href="Gallery.html">
+                    <i class='bx bx-images'></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="Sitemap.html">
+                    <i class='bx bx-sitemap'></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="StudentDetails.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <i class='bx bx-message-square-dots'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="EditorNiamat.html">
+                <div class="profile_content">
+                    <div class="tooltipPgEdit">
+                        <div class="profile">
+                            <div class="profile_details">
+                                <div class="group_info">
+                                    <i class='bx bx-edit'></i>
+                                    <div class="text_1">Page Editor</div>
+                                    <div class="text_2">Niamat Marjan</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="tooltiptext">Page Editor</span>
+                    </div>
+                </div>
+            </a>
+    </div>
+
+    <!-- First Page -->
+    <!-- Info Box-->
+    <div class="infoContainer" id="infoContainer">
+        <h2 class="quizHeader">Welcome to the Trivia!</h2>
+        <div class="infoList">
+            <div class="infoTitle"><span><b>Trivia Instructions!</b></span></div>
+            <hr>
+            <div class="info">You have 60 seconds to answer all questions.</div>
+            <div class="info">You Gain 2 points for a Correct answer.</div>
+            <div class="info">You Lose 1 point for a Wrong answer.</div>
+            <div class="info">Your Results will be Displayed at the end of the quiz.</div>
+        </div>
+        <div class="startButton" id="startButton" onclick="startQuiz()"><button class="buttons">Start Quiz</button></div>
+    </div>
+
+    <!-- Second Page -->
+    <!-- Question Box -->
+    <div class="questionContainer" id="questionContainer">
+        <header class="header" id="header">
+            <div class="quizHeader" id="movieTrivia">Movie Trivia</div>
+            <!-- All Timers -->
+            <div class="timer">
+                <div id="timeText">Time Left: <span id="timeLeft"></span> seconds.</div>
+                <progress value="0" max="60" id="progressBar"></progress>
+            </div>
+            <div class="timeBar"></div>
+            <div id="timer2">Time Left:<br><span id="timer2s"></span> S</div>
+        </header>
+        <hr>
+        <!-- All Questions -->
+
+        <!-- Question 1 -->
+        <div class="question" id="question1">
+            <h4 class="questionNumber">1. Which two actors directed themselves in movies and won Oscars for Best Actor?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q1" value="0"> Al Pacino and Timothy Hutton</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q1" value="0"> Jack Nicholson and Kevin Spacey</label>
+            <hr>
+            <label class="corAns" id="q1"><input class="answer" type="radio" name="q1" value="1"> Laurence Olivier and Roberto Benigni</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q1" value="0"> Tom Hanks and Paul Newman</label>
+        </div>
+        <!-- Question 2 -->
+        <div class="question" id="question2">
+            <h4 class="questionNumber">2. "After all, tomorrow is another day!" was the last line in which Oscar-winning Best Picture?</h4>
+            <hr class="hr">
+            <label class="corAns" id="q2"><input class="answer" type="radio" name="q2" value="1"> Gone With the Wind</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q2" value="0"> Great Expectations</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q2" value="0"> Harold and Maude</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q2" value="0"> The Matrix</label>
+        </div>
+        <!-- Question 3 -->
+        <div class="question" id="question3">
+            <h4 class="questionNumber">3. Who is the only person to win an Oscar for Best Director for the only movie he ever directed?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q3" value="0"> Bob Fosse</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q3" value="0"> Frank Borzage</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q3" value="0"> Leo McCarey</label>
+            <hr>
+            <label class="corAns" id="q3"><input class="answer" type="radio" name="q3" value="1"> Jerome Robbins</label>
+        </div>
+        <!-- Question 4 -->
+        <div class="question" id="question4">
+            <h4 class="questionNumber">4. Who is the most nominated actor in Academy history?</h4>
+            <hr class="hr">
+            <label class="corAns" id="q4"><input class="answer" type="radio" name="q4" value="1"> Jack Nicholson</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q4" value="0"> Laurence Olivier</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q4" value="0"> Spencer Tracy</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q4" value="0"> Paul Newman</label>
+        </div>
+        <!-- Question 5 -->
+        <div class="question" id="question5">
+            <h4 class="questionNumber">5. In which movie was the Oscar-winning song "Do Not Forsake Me, Oh My Darlin'" prominently featured?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q5" value="0"> Butch Cassidy and the Sundance Kid (1969)</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q5" value="0"> Calamity Jane (1953)</label>
+            <hr>
+            <label class="corAns" id="q5"><input class="answer" type="radio" name="q5" value="1"> High Noon (1952)</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q5" value="0"> Song of the South (1946)</label>
+        </div>
+        <!-- Question 6 -->
+        <div class="question" id="question6">
+            <h4 class="questionNumber">6. What was the first Western to win the Academy Award for Best Picture?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q6" value="0"> Brokeback Mountain (2005)</label>
+            <hr>
+            <label class="corAns" id="q6"><input class="answer" type="radio" name="q6" value="1"> Cimarron (1930/31)</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q6" value="0"> The Last Wagon (1956)</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q6" value="0"> Stagecoach (1939)</label>
+        </div>
+        <!-- Question 7 -->
+        <div class="question" id="question7">
+            <h4 class="questionNumber">7. In the superhero movie Marvel's The Avengers (2012), what alien race threatened to invade New York?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q7" value="0"> The Mimics</label>
+            <hr>
+            <label class="corAns" id="q7"><input class="answer" type="radio" name="q7" value="1"> The Chitauri</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q7" value="0"> The Falleen</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q7" value="0"> The Kaijus</label>
+        </div>
+        <!-- Question 8 -->
+        <div class="question" id="question8">
+            <h4 class="questionNumber">8.Who was the first victim of killer Michael Myers in John Carpenter's classic horror film Halloween (1978)?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q8" value="0"> Annie</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q8" value="0"> Bob</label>
+            <hr>
+            <label class="corAns" id="q8"><input class="answer" type="radio" name="q8" value="1"> Judith</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q8" value="0"> Lynda</label>
+        </div>
+        <!-- Question 9 -->
+        <div class="question" id="question9">
+            <h4 class="questionNumber">9.Who was the evil lion in Disney's The Lion King (1994)?</h4>
+            <hr class="hr">
+            <label><input class="answer" type="radio" name="q9" value="0"> Mufasa</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q9" value="0"> Nala</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q9" value="0"> Simba</label>
+            <hr>
+            <label class="corAns" id="q9"><input class="answer" type="radio" name="q9" value="1"> Scar</label>
+        </div>
+        <!-- Question 10 -->
+        <div class="question" id="question10">
+            <h4 class="questionNumber">10.In Aliens (1986), what was the name of the "artificial person" or android?</h4>
+            <hr class="hr">
+            <label class="corAns" id="q10"><input class="answer" type="radio" name="q10" value="1"> Bishop</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q10" value="0"> Gorman</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q10" value="0"> Hicks</label>
+            <hr>
+            <label><input class="answer" type="radio" name="q10" value="0"> Hudson</label>
+        </div>
+        <!-- Question Box Buttons -->
+        <button class="buttons" id="backButton" onclick="goBack()">Go Back</button>
+        <button class="buttons" id="submitButton" onclick="submitQuiz()">Submit</button>
+        <button class="buttons" id="backTop" onclick="backTop()">&#8607;</button>
+    </div>
+
+    <!-- Third Page -->
+    <!-- Results Box -->
+    <div class="resultContainer" id="resultContainer">
+        <div class="quizHeader">You Completed the Quiz!</div>
+        <div class="scoreBox" id="scoreBox">
+            <div class="scoreText">
+                <h2 class= "score" id="score"></h2>
+                <h3 class= "scoreTag" id="scoreTag"></h3>
+                <h3>You took <span id="timeTaken"></span> seconds to answer the questions!</h3>
+            </div>
+        </div>
+        <!-- Results Box Buttons -->
+        <button id="restart" class="buttons" onclick="restartQuiz()">Replay Quiz</button>
+        <button id="checkButton" class="buttons" onclick="checkAnswers()">Check Answers</button>
+    </div>
+
+    <!-- Nav Bar Script -->
+    <script src="Quiz.js"></script>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active")
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.wrapper,
+.checkResults {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px 0 #fca31f;
+}
+
+.wrapper {
+    display: block;
+}
+
+.checkResults {
+    display: none;
+}
+
+.wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #fca31f;
+}
+
+.checkResults h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #fca31f;
+}
+
+.wrapper .inputField {
+    margin-bottom: 10px;
+}
+
+.wrapper .inputField input[type="text"],
+.wrapper textarea,
+.wrapper select {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.wrapper p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.wrapper select {
+    margin-bottom: 10px;
+}
+
+.wrapper textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.wrapper .btn input[type="submit"] {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #14213d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.wrapper .btn:hover input[type="submit"] {
+    box-shadow: 0 5px 5px 0 #fca31f;
+}
+
+.wrapper #errorMessage {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    background: #fc7e83;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: normal;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.checkResults h5 {
+    text-align: left;
+}
+
+.checkResults .checkBtn {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #14213d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.checkResults .checkBtn:hover {
+    box-shadow: 0 5px 5px 0 #fca31f;
+}

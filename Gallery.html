@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="changes.css">
+	<link rel="stylesheet" type="text/css" href="Gallery.css">
+	
+	<!-- nav bar start -->
+	
+    <link rel="stylesheet" href="theme.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	
+	<!-- nav bar end -->
+	
+</head>
+
+<body>
+	<a name="top"></a>
+
+	<!-- nav bar start -->
+	
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-movie-play'></i>
+                <div class="logo_name">LUMIÈRE</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="Main.html">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Products.html">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Store</span>
+                </a>
+                <span class="tooltip">Store</span>
+            </li>
+            <li>
+                <a href="Quiz.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">Trivia</span>
+                </a>
+                <span class="tooltip">Trivia</span>
+            </li>
+
+            <li>
+                <a href="Gallery.html">
+                    <i class='bx bx-images'></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+            <li>
+                <a href="Sitemap.html">
+                    <i class='bx bx-sitemap'></i>
+                    <span class="links_name">Site Map</span>
+                </a>
+                <span class="tooltip">Site Map</span>
+            </li>
+            <li>
+                <a href="StudentDetails.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="links_name">Student Details</span>
+                </a>
+                <span class="tooltip">Student Details</span>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <i class='bx bx-message-square-dots'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+        <a href="EditorKumuditha.html">
+            <div class="profile_content">
+                <div class="tooltipPgEdit">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <div class="group_info">
+                                <i class='bx bx-edit'></i>
+                                <div class="text_1">Page Editor</div>
+                                <div class="text_2">Kumuditha Dodanwela</div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="tooltiptext">Page Editor</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="home_content">
+	
+	<!-- nav bar end -->
+
+	<div class="dropdown">
+	  <button class="dropbtn">Change background color</button>
+	  <div class="dropdown-content">
+		<a onclick="black()" >Black</a>
+		<a onclick="blue()" >Oxford Blue</a>
+		<a onclick="orange()" >Orange</a>
+	  </div>
+	</div>
+	<div class="dropdown">
+	  <button class="dropbtn">Change text color</button>
+	  <div class="dropdown-content">
+		<a onclick="blacktxt()" >Black</a>
+		<a onclick="whitetxt()" >White</a>
+		<a onclick="orangetxt()" >Orange</a>
+	  </div>
+	</div>
+
+	<h1>Image Gallery</h1>
+	<h3>Here is couple of movies we picked out for you to watch this week</h3>
+	<p>If you are interested in them you can buy them straight from our store</p>
+
+	<br>
+
+	<section>
+		
+		<div class = "box">
+			<div class = "imgBx">
+				<img src="images/pic1.jpg" alt="Avengers">
+				<div class="content">
+					<h3>Avengers Endgame (2019)</h3>
+					<p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "box">
+			<div class = "imgBx">
+			<img src="images/pic2.jpg" alt="Irishman">
+				<div class="content">
+					<h3>The Irishman (2019)</h3>
+					<p>In the 1950s, truck driver Frank Sheeran gets involved with Russell Bufalino and his Pennsylvania crime family. As Sheeran climbs the ranks to become a top hit man, he also goes to work for Jimmy Hoffa -- a powerful Teamster tied to organized crime.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "box">
+			<div class = "imgBx">
+			<img src="images/pic3.jpg" alt="A Quiet Place">
+				<div class="content">
+					<h3>A Quiet Place (2018)</h3>
+					<p>Two parents do what it takes to keep their children safe in a world full of creatures hunting every sound they can hear. Not a sound can be heard from the family hiding in silence, but all it takes is one noise and everything can go wrong.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "box">
+			<div class = "imgBx">
+			<img src="images/pic4.jpg" alt="12 Years a Slave">
+				<div class="content">
+					<h3>12 Years a Slave (2013)</h3>
+					<p>Based on an incredible true story of one man's fight for survival and freedom. In the pre-Civil War United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery. Facing cruelty personified by a malevolent slave owner, as well as unexpected kindnesses, Solomon struggles not only to stay alive, but to retain his dignity. In the twelfth year of his unforgettable odyssey, Solomon's chance meeting with a Canadian abolitionist will forever alter his life.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "box">
+			<div class = "imgBx">
+			<img src="images/pic5.jpg" alt="Martian">
+				<div class="content" id="myDIV">
+					<h3>The Martian (2015)</h3>
+					<p>During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive. Millions of miles away, NASA and a team of international scientists work tirelessly to bring "the Martian" home, while his crewmates concurrently plot a daring, if not impossible, rescue mission. As these stories of incredible bravery unfold, the world comes together to root for Watney's safe return.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<button id="myBtn"><a href="#top" style="color: white">Back to top</a></button>
+
+    </div>
+
+    <script>
+	
+		<!-- nav bar start-->
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active")
+        }
+		
+		<!-- nav bar end-->
+		
+		function black() {
+		document.body.style.backgroundColor="black"
+		document.body.style.color="white"
+		}
+		function blue() {
+		document.body.style.backgroundColor="#14213d"
+		}
+		function orange() {
+		document.body.style.backgroundColor="#fca311"
+		}
+		
+		
+		
+		function blacktxt() {
+		document.body.style.color="black"
+		}
+		function whitetxt() {
+		document.body.style.color="white"
+		}
+		function orangetxt() {
+		document.body.style.color="#fca311"
+		}
+		
+		
+
+		
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click' , () =>
+		{
+			popup.classList.toggle('active')
+		}))
+		
+		
+    </script>
+	
+</body>
+</html>
